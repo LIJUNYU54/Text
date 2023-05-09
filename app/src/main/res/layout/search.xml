@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebef"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_blur"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <RelativeLayout
+            android:background="@drawable/music_play_background"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_blur"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/user_name"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:text="张三"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+<LinearLayout
+    android:id="@+id/collect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.example.music.item_view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@drawable/sc"
+        zsg:show_text="我的收藏" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.example.music.item_view
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@drawable/lishi"
+        zsg:show_text="历史记录" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+    <com.example.music.item_view
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="false"
+        zsg:show_leftimg="@drawable/xiazai"
+        zsg:show_text="离线缓存" />
+
+    <com.example.music.item_view
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="false"
+        zsg:show_leftimg="@drawable/about"
+        zsg:show_text="关于" />
+</LinearLayout>

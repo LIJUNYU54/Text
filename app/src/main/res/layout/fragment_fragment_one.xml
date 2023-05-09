@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_music_info" />
+
+    <LinearLayout
+        android:id="@+id/ll_music_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sk_progress"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_music_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择播放歌曲" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/sk_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_music_time" />
+
+    <LinearLayout
+        android:id="@+id/ll_music_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_button_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_music_current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/tv_music_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ib_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/ib_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/ib_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

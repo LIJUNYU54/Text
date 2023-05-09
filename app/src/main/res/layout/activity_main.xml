@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/shouye"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:text="MUSIC"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:padding="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:paddingTop="300dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login"
+            android:layout_gravity="center"
+            android:src="@mipmap/loginbutton2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/register"
+
+            android:src="@mipmap/registerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

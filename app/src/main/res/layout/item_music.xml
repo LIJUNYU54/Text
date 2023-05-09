@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_music_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="title"
+        android:textColor="#222222"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/tv_music_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_music_title"
+        android:maxLines="1"
+        android:text="path......"
+        android:textColor="#999999"
+        android:textSize="15dp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/coll"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:src="@drawable/ic_launcher_foreground"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"/>-->
+</RelativeLayout>
